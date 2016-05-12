@@ -11,8 +11,8 @@
  *
  *     Options:
  *     -o <path>            output file.
- *     -fg <hex color>      6-digit CSS hex string, eg. '#112233'.
- *     - color <hex color>  6-digit CSS hex string, eg. '#112233'.
+ *     --fg <hex color>      6-digit CSS hex string, eg. '#112233'.
+ *     --color <hex color>  6-digit CSS hex string, eg. '#112233'.
  */
 const fs = require('fs');
 const minimist = require('minimist');
