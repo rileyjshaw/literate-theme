@@ -1,0 +1,38 @@
+{
+  "name": "literate-theme",
+  "version": "1.0.0",
+  "description": ".",
+  "main": "literate-theme.js",
+  "bin": {
+    "literate-theme": "literate-theme.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rileyjshaw/literate-theme.git"
+  },
+  "keywords": [
+    "mute",
+    "color",
+    "scheme",
+    "literate",
+    "theme",
+    "comments",
+    "programming",
+    "saturation"
+  ],
+  "author": "rileyjshaw <i@rileyjshaw.com> (http://rileyjshaw.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rileyjshaw/literate-theme/issues"
+  },
+  "homepage": "https://github.com/rileyjshaw/literate-theme#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "mute-color": "^1.0.1",
+    "pretty-data": "^0.40.0",
+    "xmldom": "^0.1.22"
+  }
+}
