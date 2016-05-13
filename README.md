@@ -21,7 +21,7 @@ literate-theme [options] input-theme.tmTheme
 
 ```
 -o <path>            output file.
---fg <hex color>      6-digit CSS hex string, eg. '#112233'.
+--fg <hex color>     6-digit CSS hex string, eg. '#112233'.
 --color <hex color>  6-digit CSS hex string, eg. '#112233'.
 ```
 

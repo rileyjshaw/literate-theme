@@ -11,7 +11,7 @@
  *
  *     Options:
  *     -o <path>            output file.
- *     --fg <hex color>      6-digit CSS hex string, eg. '#112233'.
+ *     --fg <hex color>     6-digit CSS hex string, eg. '#112233'.
  *     --color <hex color>  6-digit CSS hex string, eg. '#112233'.
  */
 const fs = require('fs');
@@ -73,8 +73,10 @@ fs.readFile(inputFile, 'utf8', (err, xml) => {
             }
 
             // NOTE: Just updates the "foreground" field for now.
-            foreground.data = toMuted(foreground.data.slice(0, 7)) +
-                foreground.data.slice(7);
+            // Exit early if "foreground" doesn't already contain a hex color.
+            const color = foreground.data && foreground.data.slice(0, 7);
+            if (!color || !/^#[0-9a-fA-F]{6}$/.test(color)) {return;}
+            foreground.data = toMuted(color) + foreground.data.slice(7);
         })
         ;
 
